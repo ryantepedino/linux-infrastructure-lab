@@ -1,0 +1,8 @@
+services:
+  app:
+    image: alpine
+    container_name: volume-persistence-test
+    command: >
+      sh -c "echo Registro criado em $(date) >> /data/log.txt && cat /data/log.txt && sleep 3600"
+    volumes:
+      - ./data:/data
