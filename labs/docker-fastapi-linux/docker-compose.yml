@@ -1,0 +1,7 @@
+services:
+  api:
+    build: .
+    container_name: linux-infra-lab-api
+    ports:
+      - "8002:8000"
+    restart: always
