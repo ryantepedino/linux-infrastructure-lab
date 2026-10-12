@@ -50,3 +50,13 @@ O projeto demonstra uma base prática para prestação de serviços de implanta�
 - Documentar os scripts, serviços e timers.
 - Elaborar um procedimento de implantação e recuperação.
 - Avaliar uma futura implantação em VPS pública com domínio próprio.
+
+## Evidências do Projeto
+
+### Aplicação publicada com acesso externo
+
+A aplicação Python foi acessada pelo navegador utilizando um endereço HTTPS temporário fornecido pelo Cloudflare Quick Tunnel.
+
+Este teste demonstrou o funcionamento da integração entre Cloudflare, Nginx e a aplicação Python no ambiente de laboratório.
+
+![Cliente01 - Acesso externo via Cloudflare](screenshots/cliente01-acesso-externo.png)
