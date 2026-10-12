@@ -68,3 +68,13 @@ Foi realizado um teste controlado de indisponibilidade do Nginx.
 O health-check identificou a falha e enviou uma notificação pelo Telegram. Após a restauração do serviço, uma segunda notificação confirmou a recuperação da aplicação e do HTTPS.
 
 ![Cliente01 - Alertas de falha e recuperação no Telegram](screenshots/cliente01-alertas-telegram.png)
+
+### Backups automatizados no Backblaze B2
+
+O projeto utiliza systemd timers e rclone para realizar backups locais e remotos.
+
+Em 12/10/2026, foi confirmada a existencia de arquivos no Backblaze B2 referentes aos dias 07, 08, 09, 10 e 12 de outubro de 2026.
+
+Comando de verificacao: `sudo rclone lsl backblaze:cliente01-backups-ryan/cliente01 | tail -n 5`
+
+A listagem confirma o armazenamento remoto. O teste de restauracao foi realizado separadamente.
