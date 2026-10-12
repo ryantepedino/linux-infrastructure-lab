@@ -60,3 +60,11 @@ A aplicação Python foi acessada pelo navegador utilizando um endereço HTTPS t
 Este teste demonstrou o funcionamento da integração entre Cloudflare, Nginx e a aplicação Python no ambiente de laboratório.
 
 ![Cliente01 - Acesso externo via Cloudflare](screenshots/cliente01-acesso-externo.png)
+
+### Monitoramento com alertas no Telegram
+
+Foi realizado um teste controlado de indisponibilidade do Nginx.
+
+O health-check identificou a falha e enviou uma notificação pelo Telegram. Após a restauração do serviço, uma segunda notificação confirmou a recuperação da aplicação e do HTTPS.
+
+![Cliente01 - Alertas de falha e recuperação no Telegram](screenshots/cliente01-alertas-telegram.png)
