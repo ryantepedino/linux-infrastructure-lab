@@ -88,3 +88,9 @@ O projeto utiliza servicos e timers do systemd para executar tarefas automaticam
 - **Monitoramento:** cliente01-healthcheck.timer, iniciado aproximadamente 2 minutos apos o boot, com verificacoes aproximadamente a cada 5 minutos.
 
 Os timers foram verificados com systemctl list-timers e systemctl cat.
+
+### Procedimento de recuperacao
+
+O projeto possui documentacao de restauracao de backups locais e do Backblaze B2, com orientacoes para recuperacao segura em ambiente de teste.
+
+[Consultar o procedimento de recuperacao](RECUPERACAO.md)
