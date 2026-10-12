@@ -78,3 +78,13 @@ Em 12/10/2026, foi confirmada a existencia de arquivos no Backblaze B2 referente
 Comando de verificacao: `sudo rclone lsl backblaze:cliente01-backups-ryan/cliente01 | tail -n 5`
 
 A listagem confirma o armazenamento remoto. O teste de restauracao foi realizado separadamente.
+
+### Automacao com systemd
+
+O projeto utiliza servicos e timers do systemd para executar tarefas automaticamente.
+
+- **Aplicacao:** cliente01-app.service, habilitado na inicializacao da VM.
+- **Backup:** cliente01-backup.timer, agendado diariamente para 05:00 UTC (02:00 de Brasilia), com Persistent=true para recuperar execucoes agendadas perdidas.
+- **Monitoramento:** cliente01-healthcheck.timer, iniciado aproximadamente 2 minutos apos o boot, com verificacoes aproximadamente a cada 5 minutos.
+
+Os timers foram verificados com systemctl list-timers e systemctl cat.
