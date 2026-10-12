@@ -62,3 +62,21 @@ Construir experiência prática em:
 
 ---
 Projeto em evolução contínua.
+
+## Projetos em Destaque
+
+### Cliente01 — Infraestrutura Linux e VPS Gerenciada
+
+Projeto prático de implantação e administração de uma aplicação Python em ambiente Linux, simulando a infraestrutura de um cliente.
+
+**Tecnologias:** Ubuntu Server, Nginx, Python, systemd, HTTPS, UFW, Backblaze B2, rclone, Telegram e Cloudflare.
+
+**Competências demonstradas:**
+- Publicação de aplicações com Nginx Reverse Proxy.
+- Gerenciamento de serviços com systemd.
+- Configuração de HTTPS e firewall.
+- Backup automatizado local e em nuvem.
+- Monitoramento com alertas de falha e recuperação.
+- Validação de acesso externo à aplicação.
+
+**[Acessar documentação do Projeto Cliente01](labs/cliente01-vps/README.md)**
